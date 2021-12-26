@@ -1,0 +1,32 @@
+body{
+    background-color: $secondary;
+}
+
+// index
+
+main section img{
+    padding-top: 5px;
+}
+
+.grid__index{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+// sobre mi
+
+main section p{
+    font-size: $textL;
+}
+
+// contacto
+
+
+
+
+
+
+

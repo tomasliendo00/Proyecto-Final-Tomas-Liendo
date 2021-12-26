@@ -1,0 +1,79 @@
+// colores
+
+$primary: black;
+$secondary: grey;
+
+// sizes
+
+html{
+    font-size: 62,5%;
+}
+
+$w-100: 100%;
+$w-75: 75%;
+$w-50: 50%;
+
+// display
+
+$d-block: block;
+$d-flex: flex;
+$d-inline: inline;
+
+// clases
+
+.textCenter{
+    text-align: center;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.padding__contacto{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+}
+
+.padding__sobreMi{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+}
+
+.padding__fotos--index{
+    padding-top: 5px;
+}
+
+#fotos{
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.tamaño__fotos--index{
+    width: 1080px;
+    height: 715px;
+}
+
+.container-css{
+    background-color: black;
+    border: solid 1px black;
+}
+
+.carrusel__tamaño{
+    width: 90%;
+    height: auto;
+    padding-top: 15px;
+}
+
+// animaciones
+
+.transform:hover{
+    transform: scale(1.05);
+}
+

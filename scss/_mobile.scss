@@ -1,0 +1,71 @@
+// grid areas
+
+#foto1{
+    grid-area: foto1;
+}
+
+#foto2{
+    grid-area:foto2;
+}
+
+#foto3{
+    grid-area: foto3;
+}
+
+#foto4{
+    grid-area: foto4;
+}
+
+#foto5{
+    grid-area: foto5;
+}
+
+#foto6{
+    grid-area: foto6;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {
+    .grid__index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6";
+        }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .grid__index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6";
+        }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}

@@ -1,0 +1,12 @@
+footer ul li{
+    display: $d-inline;
+}
+
+@each $icono in facebook, instagram {
+    .#{$icono}-icon{
+        background-image: url(../img/#{$icono}.svg);
+        width: 60px;
+        height: 60px;
+        list-style: none;
+    }
+}

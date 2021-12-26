@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@300&display=swap");
+* {
+  color: black; }
+
+html {
+  font-size: 62,5%; }
+
+.textCenter {
+  text-align: center; }
+
+.textLeft {
+  text-align: left; }
+
+.textRight {
+  text-align: right; }
+
+.padding__contacto {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 25px; }
+
+.padding__sobreMi {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 25px; }
+
+.padding__fotos--index {
+  padding-top: 5px; }
+
+#fotos {
+  margin: 20px;
+  border-style: solid;
+  border-width: 2px; }
+
+.tamaño__fotos--index {
+  width: 1080px;
+  height: 715px; }
+
+.container-css {
+  background-color: black;
+  border: solid 1px black; }
+
+.carrusel__tamaño {
+  width: 90%;
+  height: auto;
+  padding-top: 15px; }
+
+.transform:hover {
+  transform: scale(1.05); }
+
+body {
+  background-color: grey; }
+
+main section img {
+  padding-top: 5px; }
+
+.grid__index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+
+main section p {
+  font-size: 1.5em; }
+
+nav {
+  background-color: black;
+  font-family: "Montserrat", sans-serif; }
+
+footer ul li {
+  display: inline; }
+
+.facebook-icon {
+  background-image: url(../img/facebook.svg);
+  width: 60px;
+  height: 60px;
+  list-style: none; }
+
+.instagram-icon {
+  background-image: url(../img/instagram.svg);
+  width: 60px;
+  height: 60px;
+  list-style: none; }
+
+#foto1 {
+  grid-area: foto1; }
+
+#foto2 {
+  grid-area: foto2; }
+
+#foto3 {
+  grid-area: foto3; }
+
+#foto4 {
+  grid-area: foto4; }
+
+#foto5 {
+  grid-area: foto5; }
+
+#foto6 {
+  grid-area: foto6; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {
+  .grid__index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6"; } }
+
+/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .grid__index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6"; } }
+
+/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+/* iPhone 4 ----------- */

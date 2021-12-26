@@ -1,0 +1,390 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:#000000 ; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav a img{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+header ul li{
+    color: #f8f8f8;
+    list-style: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+header ul li a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+header ul li a:hover{
+    color: lightgrey;
+}
+
+header ul li a.active{
+    text-decoration: underline;
+}
+
+/* header ul li a img{
+    background-color: lightgrey;
+    text-decoration: none;
+} */
+
+/* table tr th{
+    color:white ;
+    font-size: 1.5rem;
+    border: 2px solid;
+}
+
+table tr td{
+    color:white;
+    border: hidden;
+} */
+
+section p{
+    color:black;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+section img{
+    margin: 5px;
+    /* border: 2px solid black; */
+}
+
+nav h1{
+    /* font-size: 3rem; */
+    /* padding-left: 20px; */
+    color: black;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    background-color: grey;
+}
+
+/* flexbox portfolio */
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+/* clases */
+
+.textCenter{
+    text-align: center;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.padding__contacto{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+}
+
+.padding__sobreMi{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+}
+
+.padding__fotos--index{
+    padding-top: 5px;
+}
+
+#fotos{
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.tamaño{
+    width: 1080px;
+    height: auto;
+}
+
+.container-css{
+    background-color: black;
+    border: solid 1px black;
+}
+
+.carrusel__tamaño{
+    width: 90%;
+    height: auto;
+    padding-top: 15px;
+}
+
+/* grid */
+
+.grid-fotos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: "portada" "foto2" "foto3";
+    justify-items: center;
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#nombre{
+    grid-area: nombre;
+}
+
+#botonera{
+    grid-area: botonera;
+}
+
+#fotoPortada{
+    grid-area: portada;
+}
+
+#fotoRio{
+    grid-area: foto2;
+}
+
+#fotoBarco{
+    grid-area: foto3;
+}
+
+/* animaciones */
+
+.degrade{
+    background: linear-gradient(to left, black, grey, black);
+}
+
+.transform:hover{
+    transform: scale(1.05);
+}
+
+.transform__fotos--index:hover{
+    transform: scale(1.01);
+}
+
+/* mobile */
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header ul li{
+        font-size: 1.5rem;
+        margin-right: 8px;
+    }
+
+    nav h1{
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    .grid-fotos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: "portada" "foto2" "foto3";
+        justify-items: center;
+        }
+
+    .tamaño{
+        max-width: 100%;
+        height: auto;
+    }
+        
+    .tamaño2{
+        max-width: 100%;
+        height: auto;
+    }
+
+    #fotos{
+        margin: 0px;
+        border-style: none;
+    }
+}
+
+/* 481 a 767 */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+    header ul li{
+        font-size: 1.7rem;
+        margin-right: 8px;
+    }
+
+    nav h1{
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    .grid-fotos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: "portada" "foto2" "foto3";
+        justify-items: center;
+        }
+
+    .tamaño{
+        max-width: 100%;
+        height: auto;
+    }
+        
+    .tamaño2{
+        max-width: 100%;
+        height: auto;
+    }
+
+    #fotos{
+        margin: 0px;
+        border-style: none;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    
+}
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    header ul li{
+        font-size: 1.5rem;
+        margin-right: 7px;
+    }
+
+    nav h1{
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    .grid-fotos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: "portada" "foto2" "foto3";
+        justify-items: center;
+        }
+
+    .tamaño{
+        max-width: 100%;
+        height: auto;
+    }
+        
+    .tamaño2{
+        max-width: 100%;
+        height: auto;
+    }
+
+    #fotos{
+        margin: 0px;
+        border-style: none;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    header ul li{
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+
+    nav h1{
+        font-size: 2.5rem;
+        padding-left: 20px;
+    }
+
+    .grid-fotos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: "portada" "foto2" "foto3";
+        justify-items: center;
+        }
+
+    .tamaño{
+        max-width: 90%;
+        height: auto;
+    }
+        
+    .tamaño2{
+        max-width: 90%;
+        height: auto;
+    }
+
+    #fotos{
+        margin: 0px;
+        border-style: none;
+    }
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+}
+
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+}
+
+/* iPhone 4 ----------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+
+
+
